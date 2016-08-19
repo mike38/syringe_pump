@@ -30,7 +30,7 @@ module nema_17_mount()
 			//nema 17 mount
 			rotate([90, 0, 0])
 			{
-				translate([frame_width/2+0.5, height, -wall_thickness])
+				translate([frame_width/2, height, -wall_thickness])
 				{
 					translate([15.5, 15.5, 0])
 						cylinder(r=bolt/2, h=wall_thickness+1);

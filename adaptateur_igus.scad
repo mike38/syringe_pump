@@ -146,7 +146,7 @@ module front_foot() {
 }
 
 
-motor_gap=13;
+motor_gap=10.5;
 length_motor_support=126;
 
 module rear_foot() {
@@ -182,7 +182,7 @@ module rear_foot_print1 () {
     difference () {
         rear_foot();
         translate([-0.1,-0.1,motor_gap-.1])
-            cube ([lenght_fix_support+.2,length_motor_support+.2,height_fix_support]);
+            cube ([lenght_fix_support+.2,length_motor_support+.2,height_fix_support+motor_gap]);
     }
 }
 module rear_foot_print2 () {
@@ -221,5 +221,5 @@ module motor () {
 
 //motor ();
 //front_foot();
-//rear_foot_print1();
-rear_foot_print2();
+rear_foot_print1();
+//rear_foot_print2();
