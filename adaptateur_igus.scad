@@ -6,17 +6,17 @@ $fn=60;
 
 lenght_fix_support=74;
 depth_fix_support=22;
-height_fix_support=40;
+height_fix_support=35;
 
 height_feet=52;
 
 lenght_carriage=73;
 depth_carriage=69;
-height_carriage=height_fix_support;
+height_carriage=height_fix_support+5;
 
 //syringe
 diameter_body=22;
-diameter_end_body=39;
+diameter_end_body=40;
 depth_end_body=3.5;
 diameter_plunger_end=24;
 depth_plunger_end=2.2;
@@ -219,7 +219,9 @@ module motor () {
     }
 }
 
+
+fix_support() ;
 //motor ();
 //front_foot();
-rear_foot_print1();
+//rear_foot_print1();
 //rear_foot_print2();
